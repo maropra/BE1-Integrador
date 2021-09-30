@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Agregar Paciente</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/post_paciente.js"></script>
+</head>
+<body>
+<div class="container pt-3 pb-3">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="/alta-pacientes.html">Agregar nuevo</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/pacientes.html">Pacientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/index.html">Volver</a>
+        </li>
+    </ul>
+    <div class="row pt-4 justify-content-center">
+        <div class="col-sm-10" style="background-color:#f7f7f7; padding:10px; border-radius:3px">
+            <h2 class="h2 pt-2">Agregar paciente</h2>
+            <!-- <form id="add_new_paciente">
+                <div class="col">
+                    <label class="control-label" for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre" name="nombre" required>
+                </div>
+                <div class="col">
+                    <label class="control-label" for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese la apellido" name="apellido" required>
+                </div>
+                <div class="col">
+                    <label class="control-label" for="dni">Dni:</label>
+                    <input type="text" class="form-control" id="dni" placeholder="Ingrese dni" name="dni">
+                </div>
+                <div class="col">
+                    <label class="control-label" for="fechaIngreso">Fecha de ingreso:</label>
+                    <input type="date" class="form-control" id="fechaIngreso" placeholder="Ingrese fechaIngreso" name="fechaIngreso">
+                </div>
+                <div class="col">
+                    <label class="control-label" for="calle">Calle:</label>
+                    <input type="text" class="form-control" id="calle" placeholder="Ingrese calle" name="calle">
+                </div>
+                <div class="col">
+                    <label class="control-label" for="numero">Numero:</label>
+                    <input type="text" class="form-control" id="numero" placeholder="Ingrese numero" name="numero">
+                </div>
+                <div class="col">
+                    <label class="control-label" for="localidad">Localidad:</label>
+                    <input type="text" class="form-control" id="localidad" placeholder="Ingrese localidad" name="localidad">
+                </div>
+                <div class="col">
+                    <label class="control-label" for="provincia">Provincia:</label>
+                    <input type="text" class="form-control" id="provincia" placeholder="Ingrese provincia" name="provincia">
+                </div> -->
+                 <form class="row g-3" id="add_new_paciente">
+              <div class="col-md-6">
+                <label for="nombre" class="form-label mt-2">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Juan" name="nombre" required>
+              </div>
+              <div class="col-md-6">
+                <label for="apellido" class="form-label mt-2">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Perez" name="apellido" required>
+              </div>
+              <div class="col-md-6">
+                <label class="control-label mt-2" for="dni">Dni</label>
+                <input type="text" class="form-control" id="dni" placeholder="12090123" name="dni">
+              </div>
+              <div class="col-md-6">
+                <label class="control-label mt-2" for="fechaIngreso">Fecha de Ingreso</label>
+                <input type="date" class="form-control" id="fechaIngreso" placeholder="21/09/2021" name="fechaIngreso">
+              </div>
+              <div class="col-8">
+                <label class="control-label mt-2" for="calle">Dirección</label>
+                <input type="text" class="form-control" id="calle" placeholder="Avenida Independencia" name="calle">
+              </div>
+              <div class="col-4">
+                <label class="control-label mt-2" for="numero">Número</label>
+                <input type="number" class="form-control" id="numero" placeholder="1987" name="numero">
+              </div>
+              <div class="col-md-6">
+                <label class="control-label mt-2" for="localidad">Localidad</label>
+                <input type="text" class="form-control" id="localidad" placeholder="Quilmes" name="localidad">
+              </div>
+              <div class="col-md-6">
+                <label class="control-label mt-2" for="provincia">Provincia</label>
+                <input type="text" class="form-control" id="provincia" placeholder="Buenos Aires" name="provincia">
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary mt-3 mb-3" id="btn-add-new-paciente">Cargar</button>
+              </div>
+            </form>
+
+                <!-- <button type="submit" class="btn btn-info" id="btn-add-new-paciente">Cargar</button>
+            </form>-->
+            <div id="response" style="display:none; margin-top:10px">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

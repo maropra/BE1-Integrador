@@ -10,6 +10,6 @@ public class DomicilioDTO {
     private Long id;
     private String calle;
     private String numero;
-    private String ciudad;
-    private String pais;
+    private String localidad;
+    private String provincia;
 }

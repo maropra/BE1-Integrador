@@ -17,8 +17,8 @@ public class Domicilio {
 
     private String calle;
     private String numero;
-    private String ciudad;
-    private String pais;
+    private String localidad;
+    private String provincia;
 
     @OneToOne(mappedBy = "domicilio")
     private Paciente paciente;

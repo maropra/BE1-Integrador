@@ -44,8 +44,8 @@ public class DomicilioServiceImpl implements DomicilioService {
         if(dom.isPresent()){
             dom.get().setCalle(nuevoDomicilio.getCalle());
             dom.get().setNumero(nuevoDomicilio.getNumero());
-            dom.get().setCiudad(nuevoDomicilio.getCiudad());
-            dom.get().setPais(nuevoDomicilio.getPais());
+            dom.get().setLocalidad(nuevoDomicilio.getLocalidad());
+            dom.get().setProvincia(nuevoDomicilio.getProvincia());
             return domicilioRepository.save(dom.get());
         }
         return null;
