@@ -1,6 +1,7 @@
 package com.dh.Integrador.model.DTO;
 
 import com.dh.Integrador.model.Paciente;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,4 +13,6 @@ public class DomicilioDTO {
     private String numero;
     private String localidad;
     private String provincia;
+    @JsonIgnore
+    private Paciente paciente;
 }
